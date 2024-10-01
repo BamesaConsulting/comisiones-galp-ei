@@ -9,11 +9,11 @@ function calcularComision() {
     // Convertir fee de energía de €/MWh a €/kWh
     let resultado;
     if (tipoDeProducto === 12) {
-        resultado = (((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 0.70;
+        resultado = (((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 0.80;
     } else if (tipoDeProducto === 24) {
-        resultado = ((((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 2) * 0.70;
+        resultado = ((((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 2) * 0.80;
     } else if (tipoDeProducto === 36) {
-        resultado = ((((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 3) * 0.70;
+        resultado = ((((consumo / 1000) * feeEnergia + (sumPotencias * feePotencia))) * 3) * 0.80;
     }
 
     // Actualizar el resultado en la página
